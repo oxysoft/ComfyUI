@@ -27,7 +27,8 @@ if TYPE_CHECKING:
 from comfy_api.internal import (_ComfyNodeInternal, _NodeOutputInternal, classproperty, copy_class, first_real_override, is_class,
     prune_dict, shallow_clone_class)
 from comfy_execution.graph_utils import ExecutionBlocker
-from ._util import MESH, VOXEL, File3D, SVG as _SVG
+from ._util import MESH, VOXEL, SVG as _SVG
+from ._input_impl import File3D
 
 
 class FolderType(str, Enum):
